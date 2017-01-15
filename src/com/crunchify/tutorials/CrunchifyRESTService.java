@@ -37,7 +37,7 @@ public class CrunchifyRESTService {
 		System.out.println("Data Received: " + crunchifyBuilder.toString());
  
 		// return HTTP response 200 in case of success
-		return Response.status(200).entity("{\"ok\"}").build();
+		return Response.status(200).entity("{\"result\":\"ok\"}").build();
 	}
  
 	@GET
@@ -56,7 +56,7 @@ public class CrunchifyRESTService {
 	public Response ok(InputStream incomingData) {
 
 		// return HTTP response 200 in case of success
-		return Response.status(200).entity("{\"ok\"}").build();
+		return Response.status(200).entity("{\"result\":\"ok\"}").build();
 	}
  
 }
